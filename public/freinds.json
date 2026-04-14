@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Aisha Rahman",
+    "picture": "/image9.jpg",
+    "email": "aisha.rahman@example.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["college", "close friend"],
+    "bio": "Met during university. We love late-night chats and coffee.",
+    "goal": 10,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 2,
+    "name": "Tanvir Hasan",
+    "picture":  "/image4.jpg",
+    "email": "tanvir.hasan@example.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["office"],
+    "bio": "Former colleague and gym partner. Always motivates me.",
+    "goal": 14,
+    "next_due_date": "2026-04-05"
+  },
+  {
+    "id": 3,
+    "name": "Nusrat Jahan",
+    "picture":  "/image3.jpg",
+    "email": "nusrat.jahan@example.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["school", "best friend"],
+    "bio": "We’ve been friends since school. She knows everything about me.",
+    "goal": 7,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 4,
+    "name": "Imran Chowdhury",
+    "picture":  "/image8.jpg",
+    "email": "imran.chowdhury@example.com",
+    "days_since_contact": 30,
+    "status": "overdue",
+    "tags": ["travel", "adventure"],
+    "bio": "Travel buddy. We’ve explored multiple cities together.",
+    "goal": 21,
+    "next_due_date": "2026-03-25"
+  },
+  {
+    "id": 5,
+    "name": "Farhana Akter",
+    "picture":  "/image11.jpg",
+    "email": "farhana.akter@example.com",
+    "days_since_contact": 10,
+    "status": "due",
+    "tags": ["neighbor", "family friend"],
+    "bio": "Grew up in the same neighborhood. Very supportive and kind.",
+    "goal": 10,
+    "next_due_date": "2026-04-13"
+  },
+  {
+    "id": 6,
+    "name": "Rafiul Islam",
+    "picture": "/image10.jpg",
+    "email": "rafiul.islam@example.com",
+    "days_since_contact": 1,
+    "status": "on-track",
+    "tags": ["tech", "mentor"],
+    "bio": "Mentor in web development. Always guides me in coding.",
+    "goal": 7,
+    "next_due_date": "2026-04-14"
+  },
+  {
+    "id": 7,
+    "name": "Sadia Karim",
+    "picture":  "/image7.jpg",
+    "email": "sadia.karim@example.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["university", "project partner"],
+    "bio": "Worked on multiple projects together during university.",
+    "goal": 14,
+    "next_due_date": "2026-04-02"
+  },
+  {
+    "id": 8,
+    "name": "Mahmudul Hasan",
+    "picture":  "/image12.jpg",
+    "email": "mahmudul.hasan@example.com",
+    "days_since_contact": 7,
+    "status": "due",
+    "tags": ["gaming", "online friend"],
+    "bio": "Met through online gaming. We still play regularly.",
+    "goal": 7,
+    "next_due_date": "2026-04-13"
+  },
+  {
+    "id": 9,
+    "name": "Sharmin Sultana",
+    "picture":  "/image5.jpg",
+    "email": "sharmin.sultana@example.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["office", "close friend"],
+    "bio": "Colleague turned close friend. We share everything.",
+    "goal": 7,
+    "next_due_date": "2026-04-16"
+  }
+]

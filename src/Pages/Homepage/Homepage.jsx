@@ -1,10 +1,15 @@
 import React from 'react';
+import StaticSection from './StaticSection';
+import CardSection from './CardSection';
+import AllCards from '../../Component/AllCards/AllCards';
 
 const Homepage = () => {
     return (
-        <div>
-          <h1>this is homepage</h1>  
-        </div>
+        <>
+        <StaticSection />
+        <CardSection />
+        <AllCards />
+        </>
     );
 };
 
