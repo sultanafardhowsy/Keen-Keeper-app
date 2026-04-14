@@ -1,7 +1,8 @@
 
 import { Outlet } from "react-router";
 import Navbar from "../Component/SharedItem/Navbar"
-import Footer from "../Component/SharedItem/Footer";
+import Footer from "../Pages/Footer/Footer";
+
 
 // import { ToastContainer } from "react-toastify";
 

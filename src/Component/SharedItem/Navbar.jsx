@@ -37,19 +37,7 @@ const Navbar = () => {
   
 
     return (
-//       <nav className='bg-base-100 shadow-sm'>
-//         <div className="navbar  container mx-auto">
-//   <div className="navbar-start">
-    
-//     <h2 className="text-xl font-bold">
-//       <img src={logo} alt="logo" className="h-10" /></h2>
-//   </div>
-  
-//   <div className="navbar-end gap-4">
-//     {links}
-//   </div>
-// </div>
-// </nav>
+
 <div className="navbar container mx-auto">
   
   {/* LEFT: Logo + Mobile Menu */}
