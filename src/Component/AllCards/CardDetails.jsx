@@ -1,26 +1,23 @@
 import React from "react";
+import { Link } from "react-router";
 
 const FriendCard = ({ friend }) => {
+
+  
+
   const { name,picture, days_since_contact, tags, status } = friend;
 
-  // Status color styles
   const statusStyles = {
-  "on-track": "bg-green-700 text-white",
-  "due": "bg-yellow-500 text-white",
-  "almost due": "bg-yellow-300 text-white",
   "overdue": "bg-red-500 text-white",
+  "on-track": "bg-green-500 text-white",
+  "almost due": "bg-yellow-500 text-white",
 };
 
   return (
+    <Link to={`/fdetails/${friend.id}`}>
     <div className="bg-white rounded-3xl shadow-md px-4 py-8 w-80 text-center container mx-auto">
 
-   
-      {/* <figure className="p-6">
-      <img
-        src={friend.picture}
-        alt={friend.name}
-        className="w-20 h-20 mx-auto rounded-full object-cover"/>
-      </figure> */}
+  
 
        <figure className='p-6'>
     <img
@@ -62,6 +59,7 @@ const FriendCard = ({ friend }) => {
 </div>
 
     </div>
+    </Link>
   );
 };
 
