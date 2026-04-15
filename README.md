@@ -1,16 +1,62 @@
-# React + Vite
+# 👥 KeenKeeper — Keep Your Friendships Alive
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+KeenKeeper is a modern friendship tracking web application built with React.  
+It helps users maintain meaningful relationships by tracking interactions, setting contact goals, and visualizing friendship activity through analytics.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
+👉 https://your-live-link-here.com
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📌 Features
 
-## Expanding the ESLint configuration
+### 🏠 Home Dashboard
+- Displays all friends in a responsive card grid
+- Summary cards for quick overview
+- Clean banner with call-to-action button
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 👤 Friend Management
+- Detailed friend profile page
+- Contact history tracking (Call, Text, Video)
+- Status-based friendship monitoring (Overdue / Almost Due / On Track)
+
+### ⚡ Interaction System
+- Log interactions with a single click
+- Automatically updates timeline
+- Toast notifications for feedback
+
+### 📜 Timeline
+- View full interaction history
+- Filter by Call / Text / Video
+- Organized and easy-to-read activity feed
+
+### 📊 Analytics
+- Pie chart visualization using Recharts
+- Shows distribution of Call, Text, and Video interactions
+
+### 📱 Responsive Design
+- Fully optimized for mobile, tablet, and desktop devices
+
+### ⚠️ Extra Features
+- Loading spinner during data fetch
+- 404 Not Found page
+- Persistent routing (no refresh errors)
+- Toast notifications for actions
+
+---
+
+## 🛠️ Technologies Used
+
+- React.js
+- React Router DOM
+- Tailwind CSS
+- Context API
+- Recharts
+- React Hot Toast
+- JavaScript (ES6+)
+
+---
+
+## 📂 Project Structure

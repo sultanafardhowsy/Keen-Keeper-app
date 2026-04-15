@@ -1,5 +1,4 @@
-import { number } from "framer-motion";
-import { div } from "framer-motion/client";
+
 import { useLoaderData, useParams } from "react-router-dom";
 import { RiNotificationSnoozeLine } from "react-icons/ri";
 import { FaBoxArchive } from "react-icons/fa6"
@@ -26,22 +25,28 @@ const FriendDetails = () => {
 const formatDate = (dateStr) => {
   if (!dateStr) return "Invalid date";
 
-  const parts = dateStr.split("-");
-  if (parts.length !== 3) return "Invalid format";
-
-  const [day, month, year] = parts;
-
-  const date = new Date(Number(year), Number(month) - 1, Number(day));
+  const date = new Date(dateStr);
 
   if (isNaN(date)) return "Invalid date";
 
   return date.toLocaleDateString("en-US", {
-    month: "long",
-    day: "numeric",
-    year: "numeric",
+    month: "long",   // April
+    day: "2-digit",  // 02
+    year: "numeric", // 2026
   });
 };
 
+const handleCall =(expectedFriend) =>{
+  console.log(expectedFriend,'id');
+}
+
+const handleText =(id) =>{
+  console.log(id,'id');
+}
+
+const handleVideo =(id) =>{
+  console.log(id,'id');
+}
 
   return (
     <div className="container mx-auto flex justify-between mt-4">
@@ -130,43 +135,43 @@ const formatDate = (dateStr) => {
 <div className="grid grid-cols-3">
   <div>
       <div className="card w-86 bg-base-100 card-sm shadow-sm py-10">
-  <div className="card-body items-center">
-    <figure className=''>
-    <img
-      src={call}
-      alt="" className="w-6 h-6"/>
+  <button
+  onClick={() => handleCall(expectedFriend)}
+  className="card-body items-center w-full text-center cursor-pointer hover:bg-gray-100 transition rounded-xl"
+>
+  <figure>
+    <img src={call} alt="" className="w-6 h-6" />
   </figure>
-    <p className="font-bold">Call</p>
-    
-  </div>
+  <p className="font-bold">Call</p>
+</button>
 </div>
 
     </div>
       <div className="">
       <div className="card w-86 bg-base-100 card-sm shadow-sm py-10">
-  <div className="card-body items-center">
-    <figure className=''>
-    <img
-      src={text}
-      alt="" className="w-6 h-6"/>
+  <button
+  onClick={() => handleText(id)}
+  className="card-body items-center w-full text-center cursor-pointer hover:bg-gray-100 transition rounded-xl"
+>
+  <figure>
+    <img src={text} alt="" className="w-6 h-6" />
   </figure>
-    <p className="font-bold">Text</p>
-    
-  </div>
+  <p className="font-bold">Text</p>
+</button>
 </div>
 
     </div>
       <div>
       <div className="card w-86 bg-base-100 card-sm shadow-sm py-10">
-  <div className="card-body items-center">
-    <figure className=''>
-    <img
-      src={vedio}
-      alt="" className="w-6 h-6"/>
+  <button
+  onClick={() => handleVideo(id)}
+  className="card-body items-center w-full text-center cursor-pointer hover:bg-gray-100 transition rounded-xl"
+>
+  <figure>
+    <img src={vedio} alt="" className="w-6 h-6" />
   </figure>
-    <p className="font-bold">Vedio</p>
-    
-  </div>
+  <p className="font-bold">Video</p>
+</button>
 </div>
 
     </div>  
