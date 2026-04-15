@@ -6,15 +6,19 @@ import deleteIcon from "../../assets/6861362.png"
 import call from "../../assets/call.png"
 import text from "../../assets/text.png"
 import vedio from "../../assets/video.png"
+import { useContext } from "react";
+import { FreindContext } from "../../Context/freindContext";
+ 
 
 const FriendDetails = () => {
   
+  
   const { id} = useParams();
-  console.log(id,'params');
+  
  const friends = useLoaderData();
- console.log(friends);
+ 
   const expectedFriend = friends.find((friend) => friend.id == id)
-  console.log(expectedFriend);
+ 
  const {name,picture,days_since_contact,goal,bio,status,email,tags,next_due_date} = expectedFriend;
  const statusStyles = {
   "overdue": "bg-red-500 text-white",
@@ -35,18 +39,8 @@ const formatDate = (dateStr) => {
     year: "numeric", // 2026
   });
 };
+const { handleCall, handleText, handleVideo } = useContext(FreindContext);
 
-const handleCall =(expectedFriend) =>{
-  console.log(expectedFriend,'id');
-}
-
-const handleText =(id) =>{
-  console.log(id,'id');
-}
-
-const handleVideo =(id) =>{
-  console.log(id,'id');
-}
 
   return (
     <div className="container mx-auto flex justify-between mt-4">
@@ -150,7 +144,7 @@ const handleVideo =(id) =>{
       <div className="">
       <div className="card w-86 bg-base-100 card-sm shadow-sm py-10">
   <button
-  onClick={() => handleText(id)}
+  onClick={() => handleText(expectedFriend)}
   className="card-body items-center w-full text-center cursor-pointer hover:bg-gray-100 transition rounded-xl"
 >
   <figure>
@@ -164,7 +158,7 @@ const handleVideo =(id) =>{
       <div>
       <div className="card w-86 bg-base-100 card-sm shadow-sm py-10">
   <button
-  onClick={() => handleVideo(id)}
+  onClick={() => handleVideo(expectedFriend)}
   className="card-body items-center w-full text-center cursor-pointer hover:bg-gray-100 transition rounded-xl"
 >
   <figure>

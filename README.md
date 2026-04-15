@@ -59,4 +59,16 @@ It helps users maintain meaningful relationships by tracking interactions, setti
 
 ---
 
-## 📂 Project Structure
+🚀 Deployment
+
+This project can be deployed using:
+
+Vercel
+Netlify
+Cloudflare Pages
+
+⭐ Future Improvements
+Search friends feature
+Smart reminders system
+Email notifications
+Dark mode support
