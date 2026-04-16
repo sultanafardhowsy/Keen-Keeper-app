@@ -43,9 +43,9 @@ const FriendDetails = () => {
 
 
   return (
-    <div className="container mx-auto flex justify-between mt-4">
+    <div className="container mx-auto flex justify-between flex-col md:flex-row mt-4">
 
-      <div className="card bg-base-100 w-96 shadow-sm">
+      <div className="card bg-base-100 w-full shadow-sm">
         <figure className='p-6'>
           <img
             src={picture}
@@ -80,8 +80,9 @@ const FriendDetails = () => {
         <button className="btn btn-xl mt-5"><img src={deleteIcon} alt="" className="w-6 h-6" /> Delete</button>
       </div>
 
-      <div className="ml-5">
-        <div className="flex justify-between gap-5 mt-10">
+      <div className="">
+        <div className="ml-5">
+        <div className="flex justify-between flex-col md:flex-row gap-5 mt-10">
           <div>
             <div className="card w-86 bg-base-100 card-sm shadow-sm">
               <div className="card-body items-center py-10">
@@ -121,12 +122,12 @@ const FriendDetails = () => {
               <h2 className="card-title text-2xl font-bold">Relationship Goal</h2>
               <p className="font-bold">Connect every <span className="font-bold text-xl">{goal} days</span></p>
             </div>
-            <div className="card-actions justify-end">
+            <div className="card-actions justify-end sm:justify-between">
               <button className="btn btn-nutral">Edit</button>
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-3">
+        <div className="grid sm:grid-cols-1 md:grid-cols-3">
           <div>
             <div className="card w-86 bg-base-100 card-sm shadow-sm py-10">
               <button
@@ -170,8 +171,9 @@ const FriendDetails = () => {
 
           </div>
         </div>
-        <div className="container mx-auto bg-base-100 card-sm shadow-sm ">
-          <div className="flex justify-between mt-10 ">
+      </div>
+        <div className="container mx-10 px-10 bg-base-100 card-sm shadow-sm ">
+          <div className="flex justify-between mt-10  ">
             <h2 className="text-xl font-bold">Recent Interactions</h2>
             <div className="flex justify-between gap-1">
               <figure className=''>
