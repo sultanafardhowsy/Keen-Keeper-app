@@ -10,6 +10,7 @@ const COLORS = {
 
 const Stats = () => {
   const { freindsData } = useContext(FreindContext);
+  console.log(freindsData);
 
  
 const chartData = useMemo(() => {
@@ -30,6 +31,7 @@ const chartData = useMemo(() => {
 
   return (
     <div>
+      <h2 className="text-3xl font-bold">Friendship Analytics</h2>
     <div className="flex justify-center mt-10">
       <PieChart width={420} height={400}>
         <Pie

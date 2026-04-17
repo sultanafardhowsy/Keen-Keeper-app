@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { FreindContext } from "./freindContext";
+import { toast } from "react-toastify";
 
 const FreindsProvider = ({ children }) => {
   const [freindsData, setFreindsData] = useState([]);
+  
+  
 
   const formatDate = () => {
   return new Date().toLocaleDateString("en-US", {
@@ -21,6 +24,7 @@ const FreindsProvider = ({ children }) => {
   };
 
   setFreindsData((prev) => [...prev, newEntry]);
+   toast.success(`Called ${currentFreind.name}`);
 };
 
     const handleText = (currentFreind) => {
@@ -32,6 +36,7 @@ const FreindsProvider = ({ children }) => {
   };
 
   setFreindsData((prev) => [...prev, newEntry]);
+  toast.success(`Text sent to ${currentFreind.name}`);
 };
 
 const handleVideo = (currentFreind) => {
@@ -43,6 +48,7 @@ const handleVideo = (currentFreind) => {
   };
 
   setFreindsData((prev) => [...prev, newEntry]);
+  toast.success(`Vedio call done with ${currentFreind.name}`);
 };
 
   const data = {
@@ -52,6 +58,7 @@ const handleVideo = (currentFreind) => {
     handleText,
     handleVideo
   };
+  console.log(data);
 
   return (
     <FreindContext.Provider value={data}>

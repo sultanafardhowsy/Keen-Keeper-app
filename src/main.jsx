@@ -4,6 +4,7 @@ import './index.css'
 import { router } from "./Routes/Router";
 import { RouterProvider } from 'react-router/dom'
 import FreindsProvider from './Context/freindContextProvider';
+import { ToastContainer } from 'react-toastify';
 
 
 
@@ -11,6 +12,7 @@ import FreindsProvider from './Context/freindContextProvider';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
    <FreindsProvider>
+    <ToastContainer />
     <RouterProvider router={router} />,
    </FreindsProvider>
     

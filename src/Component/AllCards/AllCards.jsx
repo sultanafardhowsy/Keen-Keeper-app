@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import FriendCard from './CardDetails';
 import { FadeLoader } from 'react-spinners';
+import CardSection from '../../Pages/Homepage/CardSection'
 
 const AllCards = () => {
   const [freinds, setFreinds] = useState([]);
@@ -30,6 +31,7 @@ const AllCards = () => {
           ))}
         </div>
       )}
+     
     </div>
   );
 };
