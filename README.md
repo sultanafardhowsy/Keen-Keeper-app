@@ -95,7 +95,7 @@ KeenKeeper helps users:
 
 ⚙️ Setup Instructions
 # Clone repo
-git clone https://github.com/your-username/keenkepper.git
+git clone https://github.com/sultanafardhowsy/Keen-Keeper-app.git
 
 # Install dependencies
 npm install
