@@ -1,44 +1,58 @@
 
-import { FreindContext } from '../../Context/freindContext';
 
+import { useContext } from "react";
+import { FreindContext } from "../../Context/freindContext";
 
 const CardSection = () => {
+  const { friends, freindsData } = useContext(FreindContext);
 
-   
 
+  const totalFriends = friends.length;
+  const totalInteractions = freindsData.length;
+
+  const onTrack = friends.filter(friend => friend.status === "on-track").length;
+
+  const needAttention = totalFriends - onTrack;
 
   return (
+    <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
 
-    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
-
-      <div class="bg-white shadow rounded-lg p-6 text-center w-80">
-        <h2 class="text-2xl font-bold text-gray-800">9</h2>
-        <p class="text-gray-500 mt-1">Total Friends</p>
+      {/* Total Friends */}
+      <div className="bg-white shadow rounded-lg p-6 text-center">
+        <h2 className="text-2xl font-bold text-gray-800">
+          {totalFriends}
+        </h2>
+        <p className="text-gray-500 mt-1">Total Friends</p>
       </div>
 
-
-      <div class="bg-white shadow rounded-lg p-6 text-center w-80">
-        <h2 class="text-2xl font-bold text-gray-800">3</h2>
-        <p class="text-gray-500 mt-1">On Track</p>
+      {/* On Track */}
+      <div className="bg-white shadow rounded-lg p-6 text-center">
+        <h2 className="text-2xl font-bold text-gray-800">
+          {onTrack}
+        </h2>
+        <p className="text-gray-500 mt-1">On Track</p>
       </div>
 
-
-      <div class="bg-white shadow rounded-lg p-6 text-center w-80">
-        <h2 class="text-2xl font-bold text-gray-800">6</h2>
-        <p class="text-gray-500 mt-1">Need Attention</p>
+      {/* Need Attention */}
+      <div className="bg-white shadow rounded-lg p-6 text-center">
+        <h2 className="text-2xl font-bold text-gray-800">
+          {needAttention}
+        </h2>
+        <p className="text-gray-500 mt-1">Need Attention</p>
       </div>
 
-
-      <div class="bg-white shadow rounded-lg p-6 text-center w-80">
-        <h2 class="text-2xl font-bold text-gray-800">12</h2>
-        <p class="text-gray-500 mt-1">Interactions This Month</p>
+      {/* Interactions */}
+      <div className="bg-white shadow rounded-lg p-6 text-center">
+        <h2 className="text-2xl font-bold text-gray-800">
+          {totalInteractions}
+        </h2>
+        <p className="text-gray-500 mt-1">
+          Interactions This Month
+        </p>
       </div>
 
     </div>
-
-
   );
 };
 
 export default CardSection;
-

@@ -30,7 +30,7 @@ const chartData = useMemo(() => {
   const total = freindsData.length;
 
   return (
-    <div>
+    <div className="container mx-auto">
       <h2 className="text-3xl font-bold">Friendship Analytics</h2>
     <div className="flex justify-center mt-10">
       <PieChart width={420} height={400}>
